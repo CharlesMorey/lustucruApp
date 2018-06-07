@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0636B74620C099D50097FF41 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0636B74520C099D50097FF41 /* RecipeTableViewCell.swift */; };
+		0636B74C20C0A8F80097FF41 /* RecipeOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0636B74B20C0A8F80097FF41 /* RecipeOneTableViewCell.swift */; };
+		0636B74E20C0ABE00097FF41 /* RecipeOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0636B74D20C0ABE00097FF41 /* RecipeOneTableViewController.swift */; };
 		065CFFD320BEC35000339FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CFFD220BEC35000339FD3 /* AppDelegate.swift */; };
 		065CFFD520BEC35000339FD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065CFFD420BEC35000339FD3 /* ViewController.swift */; };
 		065CFFD820BEC35000339FD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065CFFD620BEC35000339FD3 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0636B74520C099D50097FF41 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		0636B74B20C0A8F80097FF41 /* RecipeOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOneTableViewCell.swift; sourceTree = "<group>"; };
+		0636B74D20C0ABE00097FF41 /* RecipeOneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOneTableViewController.swift; sourceTree = "<group>"; };
 		065CFFCF20BEC35000339FD3 /* LustucruApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LustucruApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065CFFD220BEC35000339FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		065CFFD420BEC35000339FD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,9 @@
 				065CFFD420BEC35000339FD3 /* ViewController.swift */,
 				065CFFD620BEC35000339FD3 /* Main.storyboard */,
 				065CFFD920BEC35200339FD3 /* Assets.xcassets */,
+				0636B74520C099D50097FF41 /* RecipeTableViewCell.swift */,
+				0636B74B20C0A8F80097FF41 /* RecipeOneTableViewCell.swift */,
+				0636B74D20C0ABE00097FF41 /* RecipeOneTableViewController.swift */,
 				065CFFDB20BEC35200339FD3 /* LaunchScreen.storyboard */,
 				065CFFDE20BEC35200339FD3 /* Info.plist */,
 			);
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0636B74C20C0A8F80097FF41 /* RecipeOneTableViewCell.swift in Sources */,
+				0636B74620C099D50097FF41 /* RecipeTableViewCell.swift in Sources */,
 				065CFFD520BEC35000339FD3 /* ViewController.swift in Sources */,
 				065CFFD320BEC35000339FD3 /* AppDelegate.swift in Sources */,
+				0636B74E20C0ABE00097FF41 /* RecipeOneTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +292,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LustucruApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +301,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.hetic.LustucruApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +311,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LustucruApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.hetic.LustucruApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
