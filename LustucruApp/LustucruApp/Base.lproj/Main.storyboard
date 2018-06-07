@@ -30,20 +30,30 @@
                                 <rect key="frame" x="140" y="301" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wL-Er-7fA">
+                                <rect key="frame" x="140" y="220" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hzN-4T-7oI"/>
+                    <connections>
+                        <outlet property="labelRecipeSelected" destination="4wL-Er-7fA" id="35k-ia-1gh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2508" y="-574.36281859070471"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu Recipe View Controller-->
         <scene sceneID="96r-Re-cFr">
             <objects>
-                <viewController id="5Yo-8D-DsC" sceneMemberID="viewController">
+                <viewController id="5Yo-8D-DsC" customClass="MenuRecipeViewController" customModule="LustucruApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FOG-Zc-Oui">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +69,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Pattes fraiches"/>
                                                 <connections>
-                                                    <segue destination="iPP-Sl-KQH" kind="show" id="1z2-uS-XIV"/>
+                                                    <segue destination="zT0-ym-Meb" kind="show" id="Rco-Z0-rF1"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -108,45 +118,49 @@
             </objects>
             <point key="canvasLocation" x="3261.5999999999999" y="-574.36281859070471"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="SH2-5T-4mC">
+        <!--Recipe First View Controller-->
+        <scene sceneID="sOh-I9-GEE">
             <objects>
-                <tableViewController id="iPP-Sl-KQH" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cxm-bc-Kxi">
+                <viewController id="zT0-ym-Meb" customClass="RecipeFirstViewController" customModule="LustucruApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5PG-fw-Lju">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeOneTableViewCell" id="gdX-pR-GCD" customClass="RecipeOneTableViewCell" customModule="LustucruApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gdX-pR-GCD" id="uhD-6h-B2m">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7p1-yh-2cO">
-                                            <rect key="frame" x="16" y="12" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NWy-ZD-9J4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeOne" rowHeight="66" id="pXQ-0s-ekW" customClass="RecipeOneTableViewCell" customModule="LustucruApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pXQ-0s-ekW" id="CPP-xy-dl8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="nameLabel" destination="7p1-yh-2cO" id="AAP-eP-DhC"/>
+                                    <outlet property="dataSource" destination="zT0-ym-Meb" id="Xx8-Tn-K1R"/>
+                                    <outlet property="delegate" destination="zT0-ym-Meb" id="Rrr-rU-Cts"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="iPP-Sl-KQH" id="8I5-JT-5Yp"/>
-                            <outlet property="delegate" destination="iPP-Sl-KQH" id="AWw-CA-v36"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LN4-qg-0Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pIF-f4-M7S" firstAttribute="bottom" secondItem="NWy-ZD-9J4" secondAttribute="bottom" id="4Ku-oA-4Y6"/>
+                            <constraint firstItem="NWy-ZD-9J4" firstAttribute="leading" secondItem="pIF-f4-M7S" secondAttribute="leading" id="aZV-cw-qFn"/>
+                            <constraint firstItem="pIF-f4-M7S" firstAttribute="trailing" secondItem="NWy-ZD-9J4" secondAttribute="trailing" id="hIt-FX-qx1"/>
+                            <constraint firstItem="NWy-ZD-9J4" firstAttribute="top" secondItem="pIF-f4-M7S" secondAttribute="top" id="osm-g1-Q3e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pIF-f4-M7S"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="NWy-ZD-9J4" id="CHl-3x-4tb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vN-O3-aAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4028" y="-1195"/>
+            <point key="canvasLocation" x="4156" y="-583.3583208395803"/>
         </scene>
         <!--Au fourneau-->
         <scene sceneID="A8V-fi-BnX">

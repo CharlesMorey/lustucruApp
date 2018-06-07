@@ -10,7 +10,6 @@ import UIKit
 
 class RecipeOneTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +21,4 @@ class RecipeOneTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060D9F3B20C988850092929B /* RecipeFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D9F3A20C988850092929B /* RecipeFirstViewController.swift */; };
+		060D9F3D20C98D6B0092929B /* MenuRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060D9F3C20C98D6B0092929B /* MenuRecipeViewController.swift */; };
 		0636B74620C099D50097FF41 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0636B74520C099D50097FF41 /* RecipeTableViewCell.swift */; };
 		0636B74C20C0A8F80097FF41 /* RecipeOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0636B74B20C0A8F80097FF41 /* RecipeOneTableViewCell.swift */; };
 		0636B74E20C0ABE00097FF41 /* RecipeOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0636B74D20C0ABE00097FF41 /* RecipeOneTableViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060D9F3A20C988850092929B /* RecipeFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFirstViewController.swift; sourceTree = "<group>"; };
+		060D9F3C20C98D6B0092929B /* MenuRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRecipeViewController.swift; sourceTree = "<group>"; };
 		0636B74520C099D50097FF41 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		0636B74B20C0A8F80097FF41 /* RecipeOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOneTableViewCell.swift; sourceTree = "<group>"; };
 		0636B74D20C0ABE00097FF41 /* RecipeOneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOneTableViewController.swift; sourceTree = "<group>"; };
@@ -67,8 +71,10 @@
 				0636B74520C099D50097FF41 /* RecipeTableViewCell.swift */,
 				0636B74B20C0A8F80097FF41 /* RecipeOneTableViewCell.swift */,
 				0636B74D20C0ABE00097FF41 /* RecipeOneTableViewController.swift */,
+				060D9F3C20C98D6B0092929B /* MenuRecipeViewController.swift */,
 				065CFFDB20BEC35200339FD3 /* LaunchScreen.storyboard */,
 				065CFFDE20BEC35200339FD3 /* Info.plist */,
+				060D9F3A20C988850092929B /* RecipeFirstViewController.swift */,
 			);
 			path = LustucruApp;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0636B74C20C0A8F80097FF41 /* RecipeOneTableViewCell.swift in Sources */,
+				060D9F3B20C988850092929B /* RecipeFirstViewController.swift in Sources */,
 				0636B74620C099D50097FF41 /* RecipeTableViewCell.swift in Sources */,
+				060D9F3D20C98D6B0092929B /* MenuRecipeViewController.swift in Sources */,
 				065CFFD520BEC35000339FD3 /* ViewController.swift in Sources */,
 				065CFFD320BEC35000339FD3 /* AppDelegate.swift in Sources */,
 				0636B74E20C0ABE00097FF41 /* RecipeOneTableViewController.swift in Sources */,
